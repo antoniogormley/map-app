@@ -22,6 +22,9 @@
 		709022182697286400DB2DBA /* BusinessRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709022172697286400DB2DBA /* BusinessRow.swift */; };
 		7090221A269778EC00DB2DBA /* BusinessDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70902219269778EC00DB2DBA /* BusinessDetail.swift */; };
 		7090221D2697A0AA00DB2DBA /* BusinessMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7090221C2697A0AA00DB2DBA /* BusinessMap.swift */; };
+		709022202698A12B00DB2DBA /* DirectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7090221F2698A12B00DB2DBA /* DirectionsView.swift */; };
+		709022222698A19E00DB2DBA /* BusinessTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709022212698A19E00DB2DBA /* BusinessTitle.swift */; };
+		709022242698A91000DB2DBA /* DirectionsMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709022232698A90F00DB2DBA /* DirectionsMap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		709022172697286400DB2DBA /* BusinessRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessRow.swift; sourceTree = "<group>"; };
 		70902219269778EC00DB2DBA /* BusinessDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetail.swift; sourceTree = "<group>"; };
 		7090221C2697A0AA00DB2DBA /* BusinessMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessMap.swift; sourceTree = "<group>"; };
+		7090221F2698A12B00DB2DBA /* DirectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsView.swift; sourceTree = "<group>"; };
+		709022212698A19E00DB2DBA /* BusinessTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessTitle.swift; sourceTree = "<group>"; };
+		709022232698A90F00DB2DBA /* DirectionsMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsMap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +156,7 @@
 				7090220C269634E900DB2DBA /* HomeView.swift */,
 				7090221B2697A08800DB2DBA /* Map */,
 				7090220E269645D700DB2DBA /* List */,
+				7090221E2698A0F600DB2DBA /* Details */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -161,7 +168,6 @@
 				7090221526964CDB00DB2DBA /* BusinessSection.swift */,
 				709022172697286400DB2DBA /* BusinessRow.swift */,
 				7090221326964AA100DB2DBA /* BusinessSectionHeader.swift */,
-				70902219269778EC00DB2DBA /* BusinessDetail.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -170,8 +176,19 @@
 			isa = PBXGroup;
 			children = (
 				7090221C2697A0AA00DB2DBA /* BusinessMap.swift */,
+				709022232698A90F00DB2DBA /* DirectionsMap.swift */,
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		7090221E2698A0F600DB2DBA /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				70902219269778EC00DB2DBA /* BusinessDetail.swift */,
+				7090221F2698A12B00DB2DBA /* DirectionsView.swift */,
+				709022212698A19E00DB2DBA /* BusinessTitle.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,14 +260,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				709022242698A91000DB2DBA /* DirectionsMap.swift in Sources */,
 				709021F12695B80200DB2DBA /* LaunchView.swift in Sources */,
 				709022182697286400DB2DBA /* BusinessRow.swift in Sources */,
+				709022202698A12B00DB2DBA /* DirectionsView.swift in Sources */,
 				7090220D269634E900DB2DBA /* HomeView.swift in Sources */,
 				709022082696316000DB2DBA /* Constants.swift in Sources */,
 				7090221426964AA200DB2DBA /* BusinessSectionHeader.swift in Sources */,
 				709022032696287F00DB2DBA /* Business.swift in Sources */,
 				7090221A269778EC00DB2DBA /* BusinessDetail.swift in Sources */,
 				709021EF2695B80200DB2DBA /* CitySightsApp.swift in Sources */,
+				709022222698A19E00DB2DBA /* BusinessTitle.swift in Sources */,
 				70902210269645E800DB2DBA /* BusinessList.swift in Sources */,
 				7090221D2697A0AA00DB2DBA /* BusinessMap.swift in Sources */,
 				7090221626964CDB00DB2DBA /* BusinessSection.swift in Sources */,

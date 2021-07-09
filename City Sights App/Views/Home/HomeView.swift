@@ -35,6 +35,9 @@ struct HomeView: View {
                 .padding([.horizontal,.top])
                 .navigationBarHidden(true)
             }else{
+                
+                ZStack(alignment: .top) {
+                
                 //show map
                 BusinessMap(selectedBusiness: $selectedBusiness)
                     .ignoresSafeArea()
@@ -43,6 +46,23 @@ struct HomeView: View {
                         //Pass in selected business
                         BusinessDetail(business: business)
                     }
+                    ZStack {
+                        Rectangle()
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                            .frame(height: 48)
+                        HStack {
+                            Image(systemName: "location")
+                            Text("San Francisco")
+                            Spacer()
+                            Button("Switch to  list view") {
+                                self.isMapShowing = false
+                            }
+                        }
+                        .padding()
+                    }
+                    .padding()
+                }
             }
         }
         }else{
