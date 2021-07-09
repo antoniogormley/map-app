@@ -22,11 +22,9 @@ struct OnBoardingView: View {
                         .resizable()
                         .scaledToFit()
                     Text("Welcome to City Sights!")
-                        .multilineTextAlignment(.center)
                         .bold()
                         .font(.title)
                     Text("City Sights helps you find the best of the city")
-                        .multilineTextAlignment(.center)
 
                     
                 }
@@ -38,13 +36,12 @@ struct OnBoardingView: View {
                         .resizable()
                         .scaledToFit()
                     Text("Ready to discover your city?")
-                        .multilineTextAlignment(.center)
                         .bold()
                         .font(.title)
                     Text("We'll show you the best restaurants, venues and more, based of your location!")
-                        .multilineTextAlignment(.center)
                     
                 }
+                .multilineTextAlignment(.center)
                 .tag(1)
                 .foregroundColor(.white)
                 .padding()
