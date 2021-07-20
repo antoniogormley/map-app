@@ -51,7 +51,7 @@ struct OnBoardingView: View {
                 if tabSelection == 0 {
                     tabSelection = 1
                 }else{
-                    model.requestGeoLocationPermission()
+                    model.requestGeolocationPermission()
                 }
             } label: {
                 ZStack{

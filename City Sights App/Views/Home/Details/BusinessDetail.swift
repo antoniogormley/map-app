@@ -40,10 +40,19 @@ struct BusinessDetail: View {
             }
             
             Group {
-                BusinessTitle(business: business)
-                    .padding()
-                Divider()
                 
+                HStack {
+                    BusinessTitle(business: business)
+                        .padding()
+                    Spacer()
+                    YelpAttribution(link: business.url!)
+                    
+                }
+                
+                DashedDivider()
+                    .padding(.horizontal)
+
+
                 HStack {
                     Text("Phone")
                         .bold()
@@ -54,7 +63,9 @@ struct BusinessDetail: View {
                 .padding()
                 
                 
-                Divider()
+                DashedDivider()
+                    .padding(.horizontal)
+
                 HStack {
                     Text("Reviews")
                         .bold()
@@ -64,8 +75,10 @@ struct BusinessDetail: View {
                 }.padding()
                 
                 
-                Divider()
-                
+                DashedDivider()
+                    .padding(.horizontal)
+
+
                 HStack {
                     Text("Website")
                         .bold()
@@ -75,7 +88,8 @@ struct BusinessDetail: View {
                     Link("Visit", destination: URL(string: "\(business.url ?? "" )")!)
                 }.padding()
                 
-                Divider()
+                DashedDivider()
+                    .padding(.horizontal)
             }
             Button(action: {
                 showDirections =  true
